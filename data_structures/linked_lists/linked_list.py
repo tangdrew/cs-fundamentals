@@ -17,4 +17,7 @@ def print_linked_list(head):
     print(" -> ".join(map(str, node_list)))
 
 ##### Examples #####
-lList = Node("a", Node("b", Node("c", None)))
+singly_linked_list = Node("a", Node("b", Node("c", None)))
+
+##### Testing #####
+# print_linked_list(singly_linked_list)

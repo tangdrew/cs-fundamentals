@@ -16,5 +16,11 @@ Insert/delete at end|Θ(n) when last element unknown; Θ(1) when last element kn
 Insert/delete in middle|search time + Θ(1)
 Wasted space (average)|Θ(n)
 
-### Methods implemented
+### Classes Implemented
+ - `Node(data, next):` data stored at node, next points to another node
+
+### Methods Implemented
  - `print_linked_list(`head`):` takes head of linked list (type Node) and prints the fields to console in form "a -> b -> c"
+
+### Examples Implemented
+ - `singly_linked_list` linked list a -> b -> c
