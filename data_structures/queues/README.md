@@ -1,0 +1,2 @@
+# Queues
+A [queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)) is a collection of entities that are kept in order and the only operations are to add an element to the end of the queue (enqueue) and to remove an element from the beginning of the queue (dequeue). Queues are often implemented as linked lists.
