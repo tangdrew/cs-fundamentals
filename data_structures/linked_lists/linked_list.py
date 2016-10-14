@@ -1,3 +1,4 @@
+##### Class definitions #####
 class Node():
     def __init__(self, data = None, next = None):
         self.data = data
@@ -6,8 +7,7 @@ class Node():
     def __str__(self):
         return str(self.data)
     
-lList = Node("a", Node("b", Node("c", None)))
-
+##### Method definitions #####
 def print_linked_list(head):
     node = head
     node_list = [node.data]
@@ -16,4 +16,5 @@ def print_linked_list(head):
         node = node.next
     print(" -> ".join(map(str, node_list)))
 
-print_linked_list(lList)
+##### Examples #####
+lList = Node("a", Node("b", Node("c", None)))
