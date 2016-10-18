@@ -12,5 +12,3 @@ Operation | Complexity
  - `TreeNode(data, children):` node with data stored and an array of children nodes
 
 ### Methods Implemented
- - `push(node):` adds node to the top of the stack
- - `pop():` removes and returns the top node of the stack
