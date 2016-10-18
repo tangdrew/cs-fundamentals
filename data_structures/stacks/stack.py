@@ -25,9 +25,6 @@ class Stack():
         if self.head == None:
             return "~empty stack~"
         return self.head.print_linked_list()
-    
-##### Method definitions #####
-
 
 ##### Testing #####
 def stack_test():
