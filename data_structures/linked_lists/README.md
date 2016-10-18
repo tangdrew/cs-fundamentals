@@ -20,7 +20,4 @@ Wasted space (average)|Θ(n)
  - `Node(data, next):` data stored at node, next points to another node
 
 ### Methods Implemented
- - `print_linked_list(`head`):` takes head of linked list (type Node) and prints the fields to console in form "a -> b -> c"
-
-### Examples Implemented
- - `singly_linked_list` linked list a -> b -> c
+ - `print_linked_list():` prints all the nodes of the linked list starting from the node to the console in form "a -> b -> c"

@@ -7,31 +7,46 @@ from data_structures.linked_lists.linked_list import *
 class Queue():
     def __init__(self, head = None):
         self.head = head
+        self.last = head
 
     def enqueue(self, node):
-        node.next = self.head
-        self.head = node
+        if self.head == None:
+            self.head = node
+            self.last = node
+        else:
+            self.last.next = node
+            self.last = node
 
     def dequeue(self):
-        node = self.head
-        while node.next.next:
-            node = node.next
-        node.next = None
+        head = self.head
+        self.head = head.next
+        return head
 
     def peek(self):
         return self.head.data
-    
-##### Method definitions #####
 
-
-##### Examples #####
-fifo_queue = Queue(singly_linked_list)
+    def __str__(self):
+        if self.head == None:
+            return "~empty queue~"
+        return self.head.print_linked_list()
 
 ##### Testing #####
-q = Queue(singly_linked_list)
-print(str(q.peek()))
-n = Node("start", None)
-q.enqueue(n)
-print_linked_list(q.head)
-q.dequeue()
-print_linked_list(q.head)
+def queue_test():
+    print("=====Queue Testing=====")
+    q = Queue()
+    print("Empty queue:")
+    print(q)
+    q.enqueue(Node("a"))
+    q.enqueue(Node("b"))
+    q.enqueue(Node("c"))
+    print("Multiple element queue:")
+    print(q)
+    print("Peek:")
+    print(str(q.peek()))
+    n = Node("last", None)
+    q.enqueue(n)
+    print("Enqueue:")
+    print(q)
+    q.dequeue()
+    print("Dequeue:")
+    print(q)

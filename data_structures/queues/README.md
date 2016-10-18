@@ -11,6 +11,5 @@ Dequeue|Θ(1) if you have a pointer to last element, Θ(n) otherwise
  - `Queue(head):` takes a linked list and provides queue operations
 
 ### Methods Implemented
-
-### Examples Implemented
- - `fifo_queue` first-in-first-out queue as a linked list a -> b -> c
+ - `enqueue(node):` adds the node to the end of the queue
+ - `dequeue():` removes and returns first node of the queue

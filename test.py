@@ -1,7 +1,7 @@
-from data_structures.linked_lists.linked_list import Node
-from data_structures.queues.queue import Queue
+from data_structures.linked_lists.linked_list import Node, linked_list_test
+from data_structures.queues.queue import Queue, queue_test
+from data_structures.stacks.stack import Stack, stack_test
 
-n = Node("data")
-print(n)
-
-Queue(n)
+linked_list_test()
+queue_test()
+stack_test()
